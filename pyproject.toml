@@ -7,7 +7,7 @@ name = "psai"
 version = "0.1.0"
 description = "A production-ready, configurable Machine Learning pipeline library with Optuna hyperparameters tuning, MLFlow and LLM Agents."
 readme = "psai/README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 authors = [
     { name = "Paweł Świtała", email = "p.switala@pslab.eu" }
 ]
@@ -30,7 +30,10 @@ dependencies = [
     "optuna-integration[mlflow]",
     "seaborn",
     "matplotlib",
-    "langchain-google-genai",
+    "langchain==1.2.0",
+    "langchain-community==0.4.1",
+    "langchain-google-genai==4.2.0",
+    "langchain-google-vertexai==3.2.1",
     "langchain-openai",
     "langchain-anthropic",
     "langchain-ollama",
